@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	background-color: #000000;
+	color: #ff4800;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0;
+}
+
+.counter {
+	font-size: 20em;
+    font-family: 'Megrim', sans-serif;
+	margin-top: 30px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+span{
+    text-align: center;
+    font-family: 'Unica One', sans-serif;
+    width: 500px;
+    font-size: 1.5em;
+    animation: red 1s ease-in-out infinite alternate;
+}
+
+
+
+@-webkit-keyframes glow{
+    from {
+        text-shadow: 0 0 5px rgb(204, 23, 23), 0 0 15px rgb(255, 4, 4), 0 0 25px #f72206;
+      }
+      
+      to {
+        text-shadow: 0 0 10px rgb(226, 28, 28), 0 0 20px #ff3c00, 0 0 30px #ff684d;
+      }
+}
+
